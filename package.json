@@ -36,5 +36,8 @@
   "devDependencies": {
     "nodemon": "^3.0.1",
     "openai": "^4.19.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
