@@ -6,7 +6,7 @@
   "module": "lib/bundle.esm.js",
   "type": "module",
   "scripts": {
-    "dev": "node --loader ts-node/esm --inspect ./src/index.ts",
+    "dev": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'node --loader ts-node/esm --inspect ./src/index.ts'",
     "test": "node --loader ts-node/esm --inspect ./src/auth.ts",
     "lint:eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{ts,tsx}\" --fix",
     "lint:prettier": "prettier --write  \"src/**/*.{js,json,tsx,md}\"",
@@ -24,11 +24,16 @@
   "dependencies": {
     "@types/node": "^18.11.11",
     "@waylaidwanderer/chatgpt-api": "^1.33.1",
+    "dotenv": "^16.3.1",
     "qrcode-terminal": "^0.12.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.4.1",
     "typescript": "^4.9.3",
     "wechaty": "^1.20.2",
     "wechaty-puppet-wechat": "^1.18.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "openai": "^4.19.0"
   }
 }
