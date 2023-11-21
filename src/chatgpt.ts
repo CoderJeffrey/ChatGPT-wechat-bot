@@ -59,7 +59,7 @@ export default class ChatGPT {
     //     cacheOptions
     //   );
     this.chatOption = {};
-    // // this.test();
+    // // this.test(); 
   }
 
   // async test() {
