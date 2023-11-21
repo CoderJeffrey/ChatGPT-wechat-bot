@@ -124,3 +124,4 @@ sudo apt-get install  ca-certificates fonts-liberation libasound2 libatk-bridge2
 
 欢迎贡献你的代码以及想法 🍵。
 
+ 
