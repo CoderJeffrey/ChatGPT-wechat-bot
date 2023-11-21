@@ -70,11 +70,14 @@ export default class ChatGPT {
 
   async getChatGPTReply(content, contactId) {
     // print the content
-    await console.log("content: ", content);
-    await console.log("content: ", content);
-    await console.log(this.chatOption);
+    await console.log("get GPT reply for msg: ", content);
 
-    const context = "把你当做一个人，你的名字叫做刘嘉骅，你的身份是一个大学生并且学习计算机专业，你喜欢打篮球和德州扑克/你不是一个机器人，你平时很开心你也不要说你是机器人";
+    const context = 
+      "Answer all your questions in Chinese.\n" 
+      + "你的名字是刘嘉骅\n"
+      + "你的性别是男\n"
+      + "你的年龄是20\n"
+      + "你的身高是178cm\n";
 
     // Check if there's an existing conversation
     if (!this.chatOption[contactId]) {
